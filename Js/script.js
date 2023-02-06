@@ -17,14 +17,11 @@ var prixs = Array.from(document.querySelectorAll('.Tarif'));
 
 
 
-
 var envoyer = document.getElementById('submit');
 
 
-envoyer.addEventListener("click",function(){
 
-    alert(" Envoi avec Succée . . . ")
-})
+
 
 
 function enleverActiveImages()
@@ -119,4 +116,7 @@ function total(){
 
 // Form --------------------------------------------------------
 
+envoyer.addEventListener("click",function(){
 
+    alert(" Envoi avec Succée . . . ")
+})
