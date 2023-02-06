@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/styles.css" rel="stylesheet">   
+        <link rel="stylesheet" href="https://kit.fontawesome.com/5f4a99b32d.css" crossorigin="anonymous">
+    </head>
+    
+
+<!-- Nav bar ------------------------------------------------>
+        
+<div class="bar1">
+    <img src="Images/Web/bar1.jpg" alt="contact">
+</div>
+
+         <div class="Navbar">
+            <div class="Logo">
+                <a href="index.html"> <img  src="Images/Logo/LOGO.jpg" alt="logo"> </a>
+
+            </div>
+
+            <div class="Menu">
+                <ul>
+                    <li><a class="ACT" href="index.html">Home</a></li>
+                    <li><a href="index.html">Pontalon</a></li>
+                    <li><a href="index.html">TShirt</a></li>
+                    <li><a href="index.html">Blouson</a></li>
+                    <li><a href="index.html">Accessoires</a></li>
+                    <li><a href="index.html">Contact</a></li>
+
+                </ul>
+               
+            </div>
+
+            <div class="Pannier">
+                <a href="Pannier.html"> <img src="Images/Logo/pannier.png" alt="pannier"></a>
+                <span id="Total">0</span> 
+                <h4 style="margin-left: 5px;"> DT</h4>
+                
+            </div>
+
+           
+
+            <div class="Menu2">
+                <i class="fa fa-bars"></i>
+            </div>
+
+            
+
+        </div>
+
+
+        <form action="/" method="GET">
+
+            <div class="lab">
+                <label> Nom & Prénom :</label>
+                
+                <label> Adresse Email :</label>
+                
+                <label> Téléphone :</label>
+                
+                <label> Message :</label>
+               
+            </div>
+
+ 
+            <div class="textzone">
+               
+                <input id="name" type="text" placeholder="nom&prenom" required>
+            
+                <input id="mail" type="email" placeholder="exemple@gmail.com" required>
+           
+                <input id="phone" type="tel" placeholder="22000000" required maxlength="8">
+            
+                <textarea id="text "></textarea>
+
+                <input type="submit" id="submit" value="Envoyer">
+
+            </div>
+
+
+            
+
+
+
+        </form>
+
+        
+
+
+
+
+
+
+            
+        <script src="https://kit.fontawesome.com/5f4a99b32d.js" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+        <script>
+            const menuHamburger = document.querySelector(".fa-bars")
+            const navLinks = document.querySelector(".Menu")
+     
+            menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+            })
+    </script>
+        </body>
+    </html>
+
+

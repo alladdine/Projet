@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.fa-bars{
+    position: absolute;
+    font-size: 30px;
+    right: 30px;
+    top: 50px;
+    display: none;
+    width: 50px;
+    
+}
+.Menu2{
+    display: none;
+}
+
+.bar1{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.bar1 img{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.bar2{
+        width: 100%;
+       position: relative;
+       
+    
+    }
+    .bar2 img{
+        width: 100%;
+        
+    }
+
+
+.Navbar{
+    top: 75px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+   
+    
+     
+border: solid 1px darkkhaki;
+}
+
+
+.Menu{
+    
+    width: 60%;
+    margin: 0 auto;
+}
+
+ .Menu ul{
+    display: flex;
+    
+    justify-content: space-between;
+    
+    
+        list-style: none;
+    
+}
+
+.Menu ul li{
+    font-size: 22px;
+    
+}
+
+
+
+
+
+
+.Logo{
+    width: 15%;
+
+}
+
+.Logo img{
+
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+
+    
+    
+
+
+.Pannier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 0 auto;
+    font-size: 5mm;
+
+}
+
+.Pannier img{
+    width: 50px;
+    margin:15px;
+   
+}
+
+
+.Slide{
+    border: solid 4px red;
+     width: 60%;
+     height: 500px;
+     margin: 0 auto;
+     position:relative;
+     margin-top: 80px;
+     margin-bottom: 20px;
+     padding: 2%;
+
+}
+
+.Slide img{
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    padding: 2%;
+
+}
+
+.Slide img.active{
+    opacity: 1;
+}
+
+.suivant, .precedant{
+    
+   color: white;
+   position: absolute;
+   top: 50%;
+   font-size: 2rem;
+   transform: translateY(-50%);
+   cursor: pointer;
+   
+
+}
+
+.suivant{
+    right: 1rem;
+
+}
+
+.precedant{
+    left: 1rem;
+}
+
+
+.container{
+    width: 100%;
+    border: solid 2px black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.produit{
+width: 300px;
+padding: 1%;
+display: flex;
+flex-direction: column;
+
+margin: 5px;
+
+border: solid 1px black;
+border-radius: 10px;
+}
+
+.produit img{
+    
+    width: 100%;
+    
+    
+}
+
+.Prix{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    color: red;
+    
+    
+    
+
+}
+
+.Qte{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.plus, .minus{
+    font-size: 25px;
+    
+}
+
+.quantite{
+    font-size: 18px;
+    font-variant-numeric: normal;
+}
+
+
+
+
+
+form{
+    background-color: rgb(173, 173, 212);
+   display: flex;
+   
+   width: 80%;
+   margin: 0 auto;
+   
+   margin-top: 100px;
+   padding: 5%;
+   
+}
+
+.lab{
+   display: flex;
+   flex-direction: column;
+  
+}
+
+.lab label{
+   justify-content: space-between;
+   margin-top: 5px;
+   font-size: 1.5rem;
+}
+
+.textzone{
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   margin: 0 auto;
+
+}
+
+.textzone input{
+   justify-content: space-between;
+   margin-top: 10px;
+   font-size: 1rem;
+   
+   
+
+
+}
+
+.textzone textarea{
+    margin-top: 10px;
+    width: 100%;
+    height: 400px;
+}
+
+#submit{
+    width: 80px;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+@media (min-width: 1400px){
+
+  
+
+   .Slide{
+    border: solid 4px red;
+     width: 80%;
+     height: 500px;
+   
+
+}
+
+}
+
+
+@media (min-width: 1200px ) and (max-width: 1400px ){
+
+    
+
+    .Slide{
+        border: solid 4px red;
+         width: 80%;
+         height: 500px;
+       
+ 
+ }
+}
+
+@media (min-width: 800px ) and (max-width: 1200px ){
+
+    
+
+    .Slide{
+        border: solid 4px red;
+         width: 80%;
+         height: 400px;
+       
+ 
+ }
+ .Slide img{
+    display: block;
+   width: 100%;
+   height: 400px;
+   position: absolute;
+
+}
+
+.produit{
+    width: 200px;
+}
+ 
+}
+
+
+@media (min-width: 600px ) and (max-width: 800px ){
+
+   
+
+    .Slide{
+        border: solid 4px red;
+         width: 80%;
+         height: 300px;
+         position: relative;
+
+       
+ 
+ }
+
+ 
+.Slide img{
+    display: block;
+   width: 100%;
+   height: 300px;
+   position: absolute;
+
+}
+
+.produit{
+    width: 150px;
+}
+
+.Menu ul li a{
+    font-size: 16px;
+    color: rgb(0, 0, 0);   
+}
+
+.plus, .minus{
+    font-size: 20px;
+    
+}
+
+.quantite{
+    font-size: 20px;
+    font-variant-numeric: normal;
+}
+.Qte{
+    font-size: 10px;
+}
+
+
+ 
+}
+
+
+
+@media (min-width: 0px ) and (max-width: 600px ){
+
+    
+
+    .Menu{
+       position: absolute;
+       background-color: rgba(255, 255, 255, 0.76);
+       backdrop-filter: blur(7px);
+       width: 100%;
+       height: 100vh;
+       top: 0;
+       left: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin-left: -100%;
+       transition: all 0.5s;
+       
+    }
+
+    .Menu.mobile-menu{
+        margin-left: 0;
+    }
+
+    .Menu ul{
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .Menu ul li{
+        margin-top: 30px;
+        font-size: 2em;
+
+    }
+
+    .Menu ul li a{
+        color: black;
+
+        
+    }
+
+    .Menu2{
+        display: block;
+    }
+
+    .Logo img{
+        position: relative;
+        width: 80px;
+        left: 10px;
+        
+        
+    }
+
+    .bar1{
+       display: none;
+    }
+
+    .bar2{
+        display: none;
+     }
+ 
+
+
+    .Navbar{
+        top: 0;
+    }
+
+    .Slide{
+        display: none;
+    }
+
+    .produit{
+        width: 200px;
+    }
+
+    .Pannier{
+        display: none;
+    }
+
+    .produit img:hover{
+        position: absolute;
+        width: 300px;
+        cursor:zoom-in;
+        
+
+    }
+
+    form{
+        margin-top: 50px;
+        background-color: brown;
+    }
+
+
+    .lab label{
+        justify-content: space-between;
+        margin-top: 12px;
+        font-size: 1rem;
+        color: white;
+     }
+
+    
+
+}
+
+
+
+
